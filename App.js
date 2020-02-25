@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import slugify from 'slugify';
 import './App.css';
 import Header from'./Header'
+import Main from './Main'
 
 class App extends Component {
   state = {
@@ -37,16 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <main>
-          <form className="main__form">
-            <h2>Customize your laptop</h2>
-            <FeatureList />
-          </form>
-          <section className="main__summary">
-            <h2>Your cart</h2>
-            <Cart />
-          </section>
-        </main>
+        <Main />
       </div>
     );
   }
