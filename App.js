@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Main />
+        <Main selected={this.updateFeature} />
       </div>
     );
   }

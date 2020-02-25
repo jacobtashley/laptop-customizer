@@ -5,7 +5,8 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
     currency: 'USD'
   });
 
-export default class Summary extends React.Component() {
+export default class Summary extends React.Component {
+    
     render() {
         return (
             Object.keys(this.state.selected).map((feature, idx) => {
