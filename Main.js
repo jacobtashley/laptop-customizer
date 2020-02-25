@@ -1,7 +1,7 @@
 import React from 'react' 
 import Form from './Form'
 import Summary from './Summary'
-import Features from './Features';
+import Feature from './Feature';
 
 export default class Main extends React.Component{
     render() {
@@ -9,7 +9,7 @@ export default class Main extends React.Component{
             <div>
                 <Form />
                 <Summary selected={this.props.selected} />
-                <Features />
+                <Feature  features={feature}/>
             </div>
         )
     }
