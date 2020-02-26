@@ -6,7 +6,11 @@ export default class Main extends React.Component {
     render() {
         return (
             <div>
-                <MainForm selected = {this.props.selected}/>
+                <MainForm 
+                    features={this.props.features}
+                    updateFeature={this.updateFeature} 
+                    selected={this.state.selected}
+                />
                 <MainSummary />
             </div>
         )

@@ -37,7 +37,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Main selected={this.updateFeature} />
+        <Main 
+          features={this.props.features}
+          updateFeature={this.updateFeature} 
+          selected={this.state.selected}
+        />
       </div>
     );
   }

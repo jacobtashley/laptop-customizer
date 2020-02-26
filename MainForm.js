@@ -6,7 +6,11 @@ export default class MainForm extends React.Component {
         return (
             <form className="main__form">
                 <h2>Customize your laptop</h2>
-                <Features features = {this.props.features}/>
+                <Features 
+                    features={this.props.features}
+                    updateFeature={this.updateFeature} 
+                    selected={this.state.selected}
+                />
             </form>
         )
     }
