@@ -9,9 +9,9 @@ export default class Summary extends React.Component {
     
     render() {
         return (
-            Object.keys(this.state.selected).map((feature, idx) => {
+            Object.keys(this.props.selected).map((feature, idx) => {
                 const featureHash = feature + '-' + idx;
-                const selectedOption = this.state.selected[feature];
+                const selectedOption = this.props.selected[feature];
 
                 return (
                     <div className="summary__option" key={featureHash}>

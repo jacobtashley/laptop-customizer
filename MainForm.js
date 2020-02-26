@@ -8,8 +8,8 @@ export default class MainForm extends React.Component {
                 <h2>Customize your laptop</h2>
                 <Features 
                     features={this.props.features}
-                    updateFeature={this.updateFeature} 
-                    selected={this.state.selected}
+                    updateFeature={this.props.updateFeature} 
+                    selected={this.props.selected}
                 />
             </form>
         )

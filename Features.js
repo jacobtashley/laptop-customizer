@@ -19,7 +19,7 @@ export default class Features extends React.Component {
               id={itemHash}
               className="feature__option"
               name={slugify(feature)}
-              checked={item.name === this.state.selected[feature].name}
+              checked={item.name === this.props.selected[feature].name}
               onChange={e => this.updateFeature(feature, item)}
             />
             <label htmlFor={itemHash} className="feature__label">

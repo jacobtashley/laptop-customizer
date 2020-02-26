@@ -8,7 +8,7 @@ export default class MainSummary extends React.Component {
             <section className="main__summary">
                 <h2>Your cart</h2>
                 <Summary />
-                <SummaryTotal selected = {this.state.selected}/>
+                <SummaryTotal selected = {this.props.selected}/>
             </section>
         )
     }

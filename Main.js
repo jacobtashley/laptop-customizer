@@ -9,9 +9,9 @@ export default class Main extends React.Component {
                 <MainForm 
                     features={this.props.features}
                     updateFeature={this.updateFeature} 
-                    selected={this.state.selected}
+                    selected={this.props.selected}
                 />
-                <MainSummary />
+                <MainSummary selected = {this.props.selected}/>
             </div>
         )
     }
